@@ -37,7 +37,7 @@ class LockableCollapsingToolbar : CollapsingToolbarLayout {
      *
      * @param lockScroll The boolean True to lock or False to unlock expanding
      */
-    fun setScrollingLock(lockScroll : Boolean) {
+    fun setExpandLock(lockScroll : Boolean) {
         ViewCompat.setNestedScrollingEnabled(mRecyclerView as View, !lockScroll)
     }
     /**
@@ -47,7 +47,7 @@ class LockableCollapsingToolbar : CollapsingToolbarLayout {
      * @param lockScroll The boolean True to lock or False to unlock expanding
      * @param lockAppBar The boolean True to lock the AppBar from being draggable
      */
-    fun setScrollingLock(lockScroll : Boolean, lockAppBar : Boolean ) {
+    fun setExpandLock(lockScroll : Boolean, lockAppBar : Boolean ) {
         ViewCompat.setNestedScrollingEnabled(mRecyclerView as View, !lockScroll)
         setAppBarDraggable(!lockAppBar)
     }
