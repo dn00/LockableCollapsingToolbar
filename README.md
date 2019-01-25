@@ -10,5 +10,5 @@ collapsingToolbarLayout.setViews(findViewById<View>(R.id.recycler_view), findVie
 collapsingToolbarLayout.setExpandLock(true)
 
 // Lock CollapsingToolbarLayout during scroll and lock AppBar from dragging
-CollapsingToolbarLayout.setExpandLock(true, true)
+collapsingToolbarLayout.setExpandLock(true, true)
 ```
